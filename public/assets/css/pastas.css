@@ -987,6 +987,7 @@ li a {
 .addcart {
   background-color: #7f0000;
   color: #fff;
+  font-size: 10px;
 }
 
 .add-cart:hover {
