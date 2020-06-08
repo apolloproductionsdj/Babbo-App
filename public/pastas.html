@@ -341,7 +341,20 @@
               <div class="col-xs-4 shop-item-price">
                 $10.95
               </div>
-              <a class="add-cart cart1 shop-item-cart" href="#">Add Cart</a>
+              <button class="addcart" onclick="myFunction()"><a class="add-cart cart1 shop-item-cart" href="#">Add To Cart</a></button>
+              <p id="demo"></p>
+              <script>
+
+              
+
+              function myFunction() {
+                document.getElementById("demo").innerHTML = "Added to Cart!";
+                
+                setTimeout(function() {
+                document.getElementById("demo").innerHTML="";
+              }, 3000);}
+                
+              </script>
             </div>
           </div>
         </div>

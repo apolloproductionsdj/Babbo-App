@@ -162,6 +162,10 @@ a.app-link:hover {
    text-decoration: none;
 }
 
+a:hover {
+  color: #fff;
+}
+
 a.app-link:active {
    color: #b03030;
    text-decoration: none;
@@ -944,6 +948,7 @@ li a {
   background: #7f0000;
   color: #fff;
   text-align: left; 
+  border-color: #7f0000;
 }
  
 .left {
@@ -967,9 +972,31 @@ li a {
 .add-cart {
   position: relative;
   width: 100%;
-
+  color: #fff;
   transition: all 0.3s ease-in-out;
  /* opacity: 0;*/
   cursor: pointer;
   text-align: center;
+}
+
+#demo {
+  color: #7f0000;
+}
+
+
+.addcart {
+  background-color: #7f0000;
+  color: #fff;
+}
+
+.add-cart:hover {
+  color: #fff;
+}
+
+.add-cart:active {
+  color: #fff;
+}
+
+.add-cart:visited {
+  color: #fff;
 }

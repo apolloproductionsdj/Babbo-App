@@ -104,6 +104,7 @@ for (let i = 0; i < carts.length; i++) {
   carts[i].addEventListener('click', () => {
     cartNumbers(products[i]);
     totalCost(products[i]);
+    // console.log("I've been clicked")
   });
 }
 
@@ -126,6 +127,13 @@ function onLoadCartNumbers() {
   if (productNumbers) {
     document.querySelector('.cart span').textContent = productNumbers;
   } 
+}
+
+function shownText() {
+  let message = document.querySelector('add-cart');
+  message.innerHTML = "Added to Cart!";
+  console.log(message);
+
 }
 
 function cartNumbers(product, action) {
@@ -263,7 +271,7 @@ function manageQuantity() {
   let currentQuantity = 0;
   let currentProduct = "";
   cartItems = JSON.parse(cartItems);
-  console.log(cartItems);
+  // console.log(cartItems);
 
   for (let i = 0; i < decreaseButtons.length; i++) {
     decreaseButtons[i].addEventListener('click', () => {
