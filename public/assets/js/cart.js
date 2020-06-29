@@ -196,6 +196,27 @@ function totalCost(product, action) {
   
 }
 
+
+var addedMessage = document.querySelectorAll(".addcart")
+  for (i = 0; i < addedMessage.length; i++) {
+    addedMessage[i].addEventListener('click', () => {
+      $(".demo").html("Added to Cart!");
+    setTimeout(function() {
+      $(".demo").addClass('hidden');
+    }, 1000)
+    });
+  }
+
+
+// function addMessage() {
+//   document.getElementById("demo").innerHTML = "Added to Cart!";
+//   setTimeout(function() {
+//   document.getElementById("demo").innerHTML="";
+//   }, 3000);
+// }
+
+
+
 function displayCart() {
   let cartItems = localStorage.getItem("productsInCart");
   cartItems = JSON.parse(cartItems)

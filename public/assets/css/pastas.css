@@ -1001,3 +1001,7 @@ li a {
 .add-cart:visited {
   color: #fff;
 }
+
+.hidden {
+  display: none;
+}
