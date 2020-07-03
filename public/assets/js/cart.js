@@ -196,16 +196,56 @@ function totalCost(product, action) {
   
 }
 
+// addedToCart = $('#addedToCart');
+// clickMe = $('#clickMe');
+
+// clickMe.click(function(){
+//     addedToCart.stop(true).fadeIn(1000);
+//     setTimeout(function(){
+//         addedToCart.stop(true).fadeOut('300', function() {
+//             $(this).css('opacity', '');
+//         });
+//     }, 2000);
+// });
 
 var addedMessage = document.querySelectorAll(".addcart")
-  for (i = 0; i < addedMessage.length; i++) {
-    addedMessage[i].addEventListener('click', () => {
-      $(".demo").html("Added to Cart!");
-    setTimeout(function() {
-      $(".demo").addClass('hidden');
-    }, 1000)
-    });
+
+ function done(e) {
+  e.preventDefault();
+  $(".demo").delay(1000).hide(0);
+ } 
+
+  function addedToCartMessage(e){
+    e.preventDefault();
+    if (addedMessage) {
+    $(".demo").html("Added to Cart!");
+    
+   
+    }
+     done(e);
   }
+
+  for (i = 0; i < addedMessage.length; i++) {
+    addedMessage[i].addEventListener('click', addedToCartMessage, false);
+  }
+
+
+  // function buttonClicked() {
+  //   if (addedToCartMessage == active) {
+  //     addedToCartMessage();
+  //   } 
+  // }
+
+
+// var addedMessage = document.querySelectorAll(".addcart")
+//   for (i = 0; i < addedMessage.length; i++) {
+//     addedMessage[i].addEventListener('click', () => {
+//       $(".demo").html("Added to Cart!");
+//     setTimeout(function() {
+//       $(".demo").addClass('hidden');
+//     }, 1000)
+//     });
+//   }
 
 
 // function addMessage() {

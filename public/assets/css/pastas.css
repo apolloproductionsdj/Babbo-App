@@ -1005,3 +1005,8 @@ li a {
 .hidden {
   display: none;
 }
+
+#addedToCart{
+    display:none;
+    background-color: none;
+}
