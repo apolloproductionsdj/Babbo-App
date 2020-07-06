@@ -1,4 +1,4 @@
-button {
+/*button {
   display: inline;
   border: none;
   padding: 0;
@@ -8,7 +8,7 @@ button {
   line-height: inherit;
   -webkit-appearance: none;
   background-color: inherit;
-}
+}*/
 
 h4 {
   color: white;
@@ -257,3 +257,43 @@ a.app-link:active {
   margin-bottom: 10px;
   color: #777
 }
+
+.close-bianca {
+  position: absolute;
+  top: 0;
+  right: 14px;
+  font-size: 42px;
+  transform: rotate(45deg); 
+  cursor: pointer;
+}
+
+.bg-modal-bianca {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+
+.button {
+  background: #7f0000;
+  color: #fff;
+  text-align: left;
+  border-color: #7f0000;
+}
+
+.modal-content {
+  width: 500px;
+  height: 300px;
+  background-color: white;
+  border-radius: 4px;
+  text-align: center;
+  padding: 20px;
+  
+}
+

@@ -5,6 +5,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="/assets/css/pizzas.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <head>
   <title>
   
@@ -20,12 +21,12 @@
     <button type="button" onclick="history.back();" value="Back">Back</button>
     
     <div class="booyah-box col-10 offset-1">
-      <%= image_tag 'SAD.jpeg', class:"image-resize" %>
-      <!-- <div class="col-12 col-sm-6"> -->
-      <h3>Bianca</h3>
-      <p class="price">$12.50</p>
-      <p class="descritpion">Mozzarella, Tomatoes, Spinach, Ricotta, Parmesan, Rosemary and Garlic.</p>
-      <button class="modal-button" id="show-modal">Learn More</button>
+      <h3>Pomodoro Pasta</h3>
+      <p class="price">$10.95</p>
+      <br />
+      <br />
+      <button class="button" data-toggle="modal" data-target="#myModal" id="button">More  Info...
+      </button>
     </div>
 
     <div class="booyah-box col-10 offset-1">
@@ -155,6 +156,47 @@
       <p align="center">*WARNING: Consuming raw or undercooked meat, eggs or seafood can increase your risk of food borne illness.</p>
     </div>
   </section>
+
+  <!-- Modal -->
+  <section class="container container-section">
+    <!-- Modal -->
+    <div class="bg-modal-bianca modal fade shop-item" id="myModal" role="dialog">
+        <!-- Modal content-->
+      <div class="modal-content">
+        <div class="close-bianca" data-dismiss="modal" aria-hidden="true">+</div>
+        <div class="modal-header">
+          <h4 class="modal-title shop-item-title">BIANCA</h4>
+          <img class="center shop-item-image" src="assets/images/bianca.jpg" id="img-bianca" png="">
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-8 shop-item-details">
+                Mozzarella, Tomatoes, Spinach, Ricotta, Parmesan, Rosemary and Garlic
+              </div>
+              <div class="col-xs-4 shop-item-price">
+                $12.50
+              </div>
+              <button class="addcart" id="clickMe"><a class="add-cart cart1 shop-item-cart" href="#">Add To Cart</a></button>
+              
+            </div>
+          </div>
+        </div>
+      </div>    
+    </div>  
+  </section>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="/assets/js/ajax-setup.js"></script>
+  <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+  <!-- <script src="/assets/js/cart.js"></script> -->
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+  <script src="/assets/js/pizza.js"></script>
+  <script src="/assets/js/cart.js"></script>
 
 </body>
 </html>
